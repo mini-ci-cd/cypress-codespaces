@@ -15,6 +15,7 @@ RUN apt-get -qq update && \
     libasound2 \
     libxtst6 xauth xvfb
 
+
 RUN yarn global add cypress @mocks-server/main js-yaml
 USER node
 RUN cypress install
